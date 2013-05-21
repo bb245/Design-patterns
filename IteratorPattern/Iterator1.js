@@ -5,7 +5,7 @@ var iterator = (function () {
     return {
         next: function () {
             var element;
-            if (!iterator.hasNext) {
+            if (!iterator.hasNext()) {
                 return null;
             }
             element = data[index];
